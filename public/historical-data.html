@@ -4,20 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Historical Data</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/historical-data.css" rel="stylesheet" />
+    <script src="js/historical-data.js"></script>
 
 </head>
 <body>
-<div class="full-container">
-    <div class="header">
-        <div class="content-header">
-            <div class="row">
+    <div id="sidemenu" class="sidemenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times</a>
+        <a href="historical-data.html">Historical Data</a>
+        <a href="#">Pick-Up Alert</a>
+        <a href="#">Driver's Activities</a>
+    </div >
+    <div class="open-menu">
+        <span onclick="openMenu()">&#9776 Menu</span>
+        <span class="header-title">G E N I T S</span>
+    </div>
+    <div id="main">
+        <div class="container-fluid">
+            <div class="title">
                 <span>HISTORICAL DATA</span>
-                <hr>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="content">
+                <div class="row">
+                    <div class="content-wrapper">
+                        <table class="content-list-table historical-data">
+                            <tr>
+                                <th class="data-time">TIME</th>
+                                <th class="data-location">LOCATION</th>
+                                <th class="data-volume">VOLUME</th>
+                            </tr>
+                            <tr>
+                                <td>2:28 AM</td>
+                                <td>TPS A</td>
+                                <td>12 m3</td>
+                            </tr>
+                            <tr>
+                                <td>2:28 AM</td>
+                                <td>TPS B</td>
+                                <td>13 m3</td>
+                            </tr>
+                            <tr>
+                                <td>2:28 AM</td>
+                                <td>TPS C</td>
+                                <td>14 m3</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>

@@ -1,0 +1,96 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #F0F4F1; }
+
+.open-menu {
+  padding: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 500;
+  background-color: #207245; }
+  .open-menu span {
+    color: #F0F4F1;
+    display: inline-block; }
+
+.header-title {
+  padding-left: 980px;
+  position: fixed; }
+
+.title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #111; }
+  .title span {
+    border-bottom: 2px solid #111; }
+
+.sidemenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+  .sidemenu a {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+  .sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+.sidemenu a:hover {
+  color: #f1f1f1; }
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px; }
+
+.content {
+  padding: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem; }
+  .content-wrapper {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .content span {
+    padding: 15px;
+    display: block; }
+  .content-list {
+    padding-top: 15px;
+    overflow-x: auto; }
+    .content-list-table {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: 100%;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      min-width: 910px; }
+      .content-list-table th, .content-list-table td {
+        padding: 10px 15px; }
+      .content-list-table th {
+        font-weight: 900; }
+      .content-list-table td {
+        border-bottom: 1px solid grey; }
+
+@media screen and (max-height: 450px) {
+  .sidemenu {
+    padding-top: 15px; }
+    .sidemenu a {
+      font-size: 18px; } }
+
+/*# sourceMappingURL=historical-data.css.map */
